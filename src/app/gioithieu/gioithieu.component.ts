@@ -13,9 +13,9 @@ export class GioithieuComponent implements OnInit {
     firstName: "Văn Tiến",
     lastName: "Phan",
     birthday: "22/11/2000",
-    phone: "782343829",
+    sdt: "782343829",
     email: "phanvantien488@gmail.com",
-    address: "Saigon",
+    address: "Sai Gon",
   }
 
   ngOnInit() {
