@@ -1,0 +1,44 @@
+<app-nav-bar></app-nav-bar>
+<div class="container my-5">
+    
+    <div id="titile">
+        <h4><strong style="color: black;text-align: center;">Đăng Kí</strong></h4>
+    </div>
+    <div class="card">
+     <div id="form-container" action="#" method="post" onsubmit="return validation();">
+         <form>
+             <div>
+                 <input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="off"/>
+                 <input type="text" id="lastname" name="lastname" placeholder="Last Name" autocomplete="off"/>
+             </div>
+    
+             <div>
+                 <input type="text" id="email" name="email" placeholder="Email example@vybzgh.com" autocomplete="off"/>
+                 <span id="erro"></span>
+             </div>
+    
+    
+            <div>
+                 <input type="password" id="password" name="password" placeholder="Password" autocomplete="off"/>
+                 <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm password" autocomplete="off"/>
+             </div>
+    
+             <div id="show-password"><label>Show password</label><input type="checkbox" name="checkbox" onclick="show()" /></div>
+            
+             <div>
+                 <p><strong>Yes,I Agree</strong><label class="checkbox"><input type="checkbox" name="checkbox"></label></p>
+                 <input type="submit" name="submit" id="submit" value="Sign In"/>
+                 
+             </div>
+         </form>
+     </div>
+     <div id="password-message">
+         <h4>Please password must contain the following</h4>
+         <p id="uppercase" class="invalid"><b>A lowercase letter</b></p>
+         <p id="lowercase" class="invalid"><b>A uppercase letter</b></p>
+         <p id="digit" class="invalid"><b>A number</b></p>
+         <p id="lengths" class="invalid"><b>Length must be between 8 to 20</b></p>
+         
+     </div>
+    </div>
+</div>
