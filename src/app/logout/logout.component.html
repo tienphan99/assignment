@@ -1,0 +1,30 @@
+<div class="container z-depth-5 my-5" *ngIf="authService.userData as user">
+    <h4 class="py-4 text-center">Profile</h4>
+    <!--Card-->
+    <div class="card card-cascade wider mb-4">
+        <!--Card image-->
+        <button type="button" routerLink="/monhoc"  class="btn btn-primary">Continue Exam</button>
+        <!--/Card image-->
+
+        <!--Card content-->
+        <div class="card-body card-body-cascade text-center">
+            <!--Title-->
+            <h4 class="card-title"><strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h4>
+            <h5 class="indigo-text"><strong>{{user.uid}}</strong></h5>
+
+            <p class="card-text">
+                Email: <strong>{{user.email}}</strong> <br>
+                Email Verified: <strong>{{user.emailVerified}}</strong>
+            </p>
+
+
+            <!--Log out-->
+            <a class="btn default-color-dark" role="button" (click)="authService.SignOut()">
+                <i class="fas fa-sign-out-alt"></i>Log out
+            </a>
+            
+        </div>
+        <!--/.Card content-->
+    </div>
+    <!--/.Card-->
+</div>
