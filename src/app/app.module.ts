@@ -53,7 +53,7 @@ import { ForgotComponent } from './forgot/forgot.component'
     ReactiveFormsModule,
     FormsModule,
     NgxPaginationModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
