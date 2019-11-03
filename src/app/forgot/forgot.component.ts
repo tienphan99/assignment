@@ -2,17 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/Authentication/auth.service'
 
 @Component({
-  selector: 'app-dangki',
-  templateUrl: './dangki.component.html',
-  styleUrls: ['./dangki.component.scss']
+  selector: 'app-forgot',
+  templateUrl: './forgot.component.html',
+  styleUrls: ['./forgot.component.scss']
 })
-export class DangkiComponent implements OnInit {
-  
+export class ForgotComponent implements OnInit {
+
   constructor(public authService : AuthService) { }
 
   ngOnInit() {
-    
-
   }
 
 }

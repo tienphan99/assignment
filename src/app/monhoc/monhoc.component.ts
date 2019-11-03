@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { subjects } from '../dulieu/subjects'
+import { subjects } from '../model/subjects'
 
 @Component({
   selector: 'app-monhoc',
