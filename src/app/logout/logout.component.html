@@ -1,4 +1,4 @@
-<div class="container z-depth-5 my-5" >
+<div class="container z-depth-5 my-5" *ngIf="authService.userData as user">
     <h4 class="py-4 text-center">Profile</h4>
     <!--Card-->
     <div class="card card-cascade wider mb-4">
@@ -19,7 +19,7 @@
 
 
             <!--Log out-->
-            <a class="btn default-color-dark" role="button" >
+            <a class="btn default-color-dark" role="button" (click)="authService.SignOut()">
                 <i class="fas fa-sign-out-alt"></i>Log out
             </a>
             
