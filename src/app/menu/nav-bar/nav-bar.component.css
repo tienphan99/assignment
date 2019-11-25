@@ -1,3 +1,6 @@
 .navbar li a:hover{
     color:blue !important;
 }
+.logo-brand img{
+    width: 120px;
+}

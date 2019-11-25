@@ -33,7 +33,7 @@ export class AuthService {
   // Sign in with email/password
   async SignIn(email, password) {
     return this.afAuth.auth.signInWithEmailAndPassword(email, password)
-      .then(result => {
+      .then(result => { 
         this.ngZone.run(() => {
           this.router.navigate(['user']);
         });

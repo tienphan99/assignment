@@ -1,34 +1,84 @@
-<app-nav-bar></app-nav-bar>
-<div class="container contact-form">
-    <div class="card">
-        <div class="contact-image">
-            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
-        </div>
-        <form method="post">
-            <h3>Liên Hệ</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
-                            value="" />
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
-                            style="width: 100%; height: 150px;"></textarea>
-                    </div>
-                </div>
+<section class="banner-bottom py-5">
+    <div class="container py-md-4">
+        <h3 class="tittle-w3layouts two text-center">Contact Us</h3>
+        <div class="comment-top mt-5 row">
+            <div class="col-lg-5 comment-bottom w3pvt_mail_grid-img">
+                <img class="img-fluid" src="../assets/images/tien.jpg" alt="">
             </div>
-        </form>
+            <div class="col-lg-7 comment-bottom w3pvt_mail_grid_right">
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="col-lg-6 form-group">
+                            <label>First Name</label>
+                            <input class="form-control" type="text" name="Name" placeholder="" required="">
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label>Last Name</label>
+                            <input class="form-control" type="text" name="Name" placeholder="" required="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 form-group">
+                            <label>Email</label>
+                            <input class="form-control" type="email" name="Email" placeholder="" required="">
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label>Phone Number</label>
+                            <input class="form-control" type="text" name="number" placeholder="" required="">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Write Message</label>
+                        <textarea class="form-control" rows="10" name="Message" placeholder="" required=""></textarea>
+                    </div>
+                    <button type="submit" class="btn submit mt-3">Submit</button>
+                </form>
+            </div>
+        </div>
+        <ul class="list-unstyled row text-left mt-lg-5 pt-lg-5  pb-lg-3">
+            <li class="col-lg-4 adress-info">
+                <div class="row">
+                    <div class="col-md-3 text-lg-center adress-icon">
+                        <span class="fa fa-map-marker"></span>
+                    </div>
+                    <div class="col-md-9 text-left">
+                        <h6>Location</h6>
+                        <p>The company name
+                            <br>Tân Kì Tân Quý, VIETNAM </p>
+                    </div>
+                </div>
+            </li>
+            <li class="col-lg-4 adress-info">
+                <div class="row">
+                    <div class="col-md-3 text-lg-center adress-icon">
+                        <span class="fa fa-envelope-open-o"></span>
+                    </div>
+                    <div class="col-md-9 text-left">
+                        <h6>Email</h6>
+                        <a href="phanvantien488@gmail.com">phanvantien488@gmail.com</a>
+                        <br>
+                        <a href="phanvantien488@gmail.com">phanvantien488@gmail.com</a>
+                    </div>
+                </div>
+            </li>
+            <li class="col-lg-4 adress-info">
+                <div class="row">
+                    <div class="col-md-3 text-lg-center adress-icon">
+                        <span class="fa fa-mobile"></span>
+                    </div>
+                    <div class="col-md-9 text-left">
+                        <h6>Phone Number</h6>
+                        <p>+ 0782343829 </p>
+                        <p>+ 01282343829</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="map-fo mt-lg-5 mt-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3295.6713819665106!2d106.60148827861299!3d10.793239421591403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c0ad0e4ac0f%3A0xafef17ecd9a0c6d6!2zNzQ3IFTDom4gS-G7syBUw6JuIFF1w70sIELDrG5oIEjGsG5nIEhvw6AgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2sin!4v1572953562102!5m2!1sen!2sin"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
     </div>
-</div>
+</section>

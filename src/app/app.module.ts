@@ -10,7 +10,7 @@ import { CountdownModule } from 'ngx-countdown';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-
+import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +26,8 @@ import { AuthService } from './services/Authentication/auth.service';
 import { LogoutComponent } from './logout/logout.component';
 import { VerifyComponent } from './verify/verify.component';
 import { DangkiComponent } from './dangki/dangki.component';
-import { ForgotComponent } from './forgot/forgot.component'
+import { ForgotComponent } from './forgot/forgot.component';
+import { ResultComponent } from './result/result.component'
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ForgotComponent } from './forgot/forgot.component'
     VerifyComponent,
     DangkiComponent,
     ForgotComponent,
+    ResultComponent,
     
   ],
   imports: [
@@ -58,7 +60,7 @@ import { ForgotComponent } from './forgot/forgot.component'
     AngularFirestoreModule,
     AngularFireStorageModule,
     CountdownModule,
-    
+    ChartsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

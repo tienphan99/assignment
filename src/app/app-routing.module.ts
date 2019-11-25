@@ -10,6 +10,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { VerifyComponent } from './verify/verify.component'
 import { DangkiComponent } from './dangki/dangki.component'
 import { ForgotComponent } from './forgot/forgot.component'
+import { ResultComponent } from './result/result.component'
 
 import { AuthGuard } from './share/guard/auth.guard'
 import { SecureInnerPages } from './share/guard/secure-inner-pages.guard.ts.guard'
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path:'user',component:LogoutComponent,canActivate : [AuthGuard]},
   {path:'quenmk',component:ForgotComponent,canActivate : [SecureInnerPages]},
   {path:'verify',component:VerifyComponent,canActivate : [SecureInnerPages]},
+  { path: "monhoc/:id/result", component: ResultComponent}
 
 ];
 

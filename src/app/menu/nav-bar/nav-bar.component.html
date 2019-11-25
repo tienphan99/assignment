@@ -1,7 +1,10 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="nav-link" href="index.html" style="background-color:darkgray "> <i class='fas fa-home'
-        style='font-size:24px'></i>TRANG CHỦ</a>
+    <div class="logo-brand">
+      <a href="/">
+        <img src="../assets/images/new_logo.png" alt="logo">
+      </a>
+    </div>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
       data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -10,23 +13,23 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]='["/gioithieu"]'><i style='font-size:15px' class='far'>&#xf2bb;</i> Giới
-            Thiệu</a>
+          <a class="nav-link" [routerLink]='["/gioithieu"]'><i style='font-size:15px' class='far'>&#xf2bb;</i>About
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]='["/lienhe"]'><i style='font-size:15px' class='far'>&#xf0e0;</i> Liên Hệ</a>
+          <a class="nav-link" [routerLink]='["/lienhe"]'><i style='font-size:15px' class='far'>&#xf0e0;</i>Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]='["/monhoc"]'><i style='font-size:15px' class='far'>&#xf0e0;</i> Môn Học</a>
+          <a class="nav-link" [routerLink]='["/monhoc"]'><i style='font-size:15px' class='fas'>&#xf518;</i>Exam</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            <i style='font-size:15px' class='far'>&#xf007;</i>Tài Khoản
+            <i style='font-size:15px' class='far'>&#xf007;</i>Account
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-            <a class="dropdown-item" [routerLink]='["/dangki"]'>Đăng Kí</a>
-            <a class="dropdown-item" [routerLink]='["/dangnhap"]'>Đăng Nhập</a>
+            <a class="dropdown-item" [routerLink]='["/dangki"]'>Sign Up</a>
+            <a class="dropdown-item" [routerLink]='["/dangnhap"]'>Sign In</a>
           </div>
         </li>
       </ul>
